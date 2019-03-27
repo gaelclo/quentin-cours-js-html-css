@@ -11,7 +11,7 @@
                     opacity: 1;
                 }
             }
-            @keyframes inv-fondu {
+            @keyframes inverse-fondu {
                 from {
                     opacity: 1;
                 }
@@ -21,126 +21,121 @@
             }
             body {
                 height: 3000px;
-                padding: 5%
+                background-color: black;
+                color: white;
+            }
+            .main {
+                padding: 25% 5% 5% 5%;
             }
             .affiche {
-                animation-duration: 0.5s;
+                animation-duration: 2s;
                 animation-name: fondu;
+                animation-fill-mode: forwards;
             }
             .efface {
-                animation-duration: 1s;
-                animation-name: inv-fondu;
-                top: 30% !important;
+                animation-duration: 2s;
+                animation-name: inverse-fondu;
+                animation-fill-mode: forwards;
             }
             .cache {
                 display: none;
             }
             .bulle {
-                /*border: 1px solid black;
-                border-radius: 50%;
-                padding: 2%;
-                max-width: 40%;
-                text-align: center;*/
                 font-family: cursive;
+                margin-top: 3%;
             }
-            .bulle-position1 {
-                position: fixed;
-                top: 50%;
-                left: 5%;
+            .bulle-col1 {
+
                 width: 50%;
             }
-            .bulle-position2 {
-                position: fixed;
-                top: 50%;
-                left: 50%;
+            .bulle-col2 {
+                margin-left: 50%;
                 width: 50%;
             }
 
         </style>       
     </head>
     <body>
-        <div class="bulle cache">Respect à toi, Spassky. Parle. Qui t’amène ?</div>
-        <div class="bulle cache">La colère.</div>
-        <div class="bulle cache">Elle t’a accompagnée jusqu’ici ?</div>
-        <div class="bulle cache">Disons plutôt que je l’ai laissé dehors m’attendre sous la pluie. Lorsque je
-        ressortirais, j’espère qu’elle aura perdu patience et qu’elle sera repartie.
-        Je suis venu te voir pour apprendre à devenir Haut Parleur.</div>
-        <div class="bulle cache">Je doute que nous ayons grand-chose à t’enseigner, Spassky. J’ai lu tes
-        recueils. Tu as déjà l’envergure, le phrasé, du souffle...</div>
-        <div class="bulle cache">Je n’ai jamais parlé au porte-voix à cent mètres au dessus du sol en
-        pédalant, encore moins en improvisant...</div>
-        <div class="bulle cache">Tu commenceras avec un parapente, comme tous les apprentis. La
-        technique vient vite.</div>
-        <div class="bulle cache">Kulenkamp m’a dit que la formation serait longue avant d’intégrer
-        l’escadre. Il m’a parlé de cours de rhétorique, d’épreuves, d’initiation,
-        d’un rituel...</div>
-        <div class="bulle cache">Il aurait dû te parler des valeurs. De ce que tu veux transmettre. La libre
-        parole publique est un art dangereux. Elle est parfois indissociable de la
-        propagande, parfois s’avère pire qu’elle : un cri pathétique, ton mal-être
-        vomi en pluie, à des milliers de gens qui n’ont pas besoin de ça. Ce qui
-        est difficile, tu le comprendras vite, n’est pas tant d’éviter d’accumuler
-        trop de mots payants dans tes discours. Tu feras de toute façon beaucoup
-        de conneries au début, surtout quand tu improviseras. Comme tu le sais,
-        les Hauts Parleurs sont très surveillés. On ne nous passe rien. Le
-        moindre mot copyrighté nous est facturé au tarif plein, que notre
-        audience soit de 1 000 ou de 50 000 personnes. Nous t’apprendrons à
-        t’exprimer à l’aide du corpus de la zone auquel tu ajouteras tes
-        néologismes et tes flexions, ton argot.</div>
-        <div class="bulle cache">Je sais déjà le faire, en grande partie.</div>
-        <div class="bulle cache">Oui, nous t’apprendrons simplement à le faire à la volée et selon ton
-        propre style. Sais-tu déjà l’école que tu vas choisir ?</div>
-        <div class="bulle cache">Je ne les connais pas toute. Mais j’ai mon idée.</div>
-        <div class="bulle cache">Il y a quatre grands styles chez les Hauts Parleurs. Le plus courant est le
-        style gratuit qui consiste...</div>
-        <div class="bulle cache">À n’utiliser que les mots du corpus gratuit - je sais ça.</div>
-        <div class="bulle cache">Le second est le style néologique qui s’appuie sur le vocabulaire archivé
-        ici, que nos érudits enrichissent sans cesse. Le troisième est à mon sens le
-        plus ambitieux, mais aussi le plus beau. Il s’agit du style torse. Beaucoup
-        d’artistes le confondent avec le néologique quoiqu’il soit très différent. Il
-        consiste à tordre le langage commercial, à plier et à découper les mots, à
-        préfixer et à suffixer, à verbaliser des noms, substantiver des verbes,
-        transformer des conjonctions en adjectif. Il consiste au fond à imprimer,
-        par des flexions, une force de résistance à l’intérieur du langage pour le
-        rendre inapte à toute récupération. Tu le sais, notre corpus 17 est menacé
-        de revente, mais les mots torses, eux, échappent aux pressions : trop dur
-        à réutiliser hors contexte, trop dépendant de la phrase où ils déploient
-        leurs effets.</div>
-        <div class="bulle cache">Pourquoi dis-tu que notre corpus est menacé ? Nous en sommes
-        propriétaires, non ?</div>
-        <div class="bulle cache">Justement. Nos paysans bio pensent qu’il faudrait revendre certains mots
-        qui se diffusent bien hors zone 17.</div>
-        <div class="bulle cache">À qui ?</div>
-        <div class="bulle cache">Aux multinationales, tiens. On a eu la semaine dernière une proposition
-        de Wor[l]d pour Volte, Volté et Volution. De quoi financer nos plantations
-        pendant deux ans. Nous avons refusé mais la tentation est là. Certains
-        parleurs de la Tour Rawls voient ça comme une revanche aussi. Leur
-        revendre des mots, ça les fait saliver comme de jeunes chiots.</div>
-        <div class="bulle cache">Il y a là-bas une confusion politique qui ne rassure pas. Qui utilise le
-        style torse chez nous ?</div>
-        <div class="bulle cache">Pour l’instant, je suis le seul...</div>
-        <div class="bulle cache">Je vois... Et le quatrième style ?</div>
-        <div class="bulle cache">C’est le style monomonème, avec ces deux variantes : maniaque et large.
-        C’est un style qui ne pardonne pas la médiocrité puisqu’il consiste à
-        n’utiliser qu’un seul mot par phrases, avec ses dérivés et à démultiplier
-        les effets de rythme et de scansion autour de ce seul mot.</div>
-        <div class="bulle cache">Je crois savoir quelle sera mon école.</div>
-        <div class="bulle cache">Je t’écoute.</div>
-        <div class="bulle cache">Ce sera le monomonème. Dans sa version maniaque.</div>
-
+        <div class="main">
+            <div class="bulle cache bulle-col1">Respect à toi, Spassky. Parle. Qui t’amène ?</div>
+            <div class="bulle cache bulle-col2">La colère.</div>
+            <div class="bulle cache bulle-col1">Elle t’a accompagnée jusqu’ici ?</div>
+            <div class="bulle cache bulle-col2">Disons plutôt que je l’ai laissé dehors m’attendre sous la pluie. Lorsque je
+            ressortirais, j’espère qu’elle aura perdu patience et qu’elle sera repartie.
+            Je suis venu te voir pour apprendre à devenir Haut Parleur.</div>
+            <div class="bulle cache bulle-col1">Je doute que nous ayons grand-chose à t’enseigner, Spassky. J’ai lu tes
+            recueils. Tu as déjà l’envergure, le phrasé, du souffle...</div>
+            <div class="bulle cache bulle-col2">Je n’ai jamais parlé au porte-voix à cent mètres au dessus du sol en
+            pédalant, encore moins en improvisant...</div>
+            <div class="bulle cache bulle-col1">Tu commenceras avec un parapente, comme tous les apprentis. La
+            technique vient vite.</div>
+            <div class="bulle cache bulle-col2">Kulenkamp m’a dit que la formation serait longue avant d’intégrer
+            l’escadre. Il m’a parlé de cours de rhétorique, d’épreuves, d’initiation,
+            d’un rituel...</div>
+            <div class="bulle cache bulle-col1">Il aurait dû te parler des valeurs. De ce que tu veux transmettre. La libre
+            parole publique est un art dangereux. Elle est parfois indissociable de la
+            propagande, parfois s’avère pire qu’elle : un cri pathétique, ton mal-être
+            vomi en pluie, à des milliers de gens qui n’ont pas besoin de ça. Ce qui
+            est difficile, tu le comprendras vite, n’est pas tant d’éviter d’accumuler
+            trop de mots payants dans tes discours. Tu feras de toute façon beaucoup
+            de conneries au début, surtout quand tu improviseras. Comme tu le sais,
+            les Hauts Parleurs sont très surveillés. On ne nous passe rien. Le
+            moindre mot copyrighté nous est facturé au tarif plein, que notre
+            audience soit de 1 000 ou de 50 000 personnes. Nous t’apprendrons à
+            t’exprimer à l’aide du corpus de la zone auquel tu ajouteras tes
+            néologismes et tes flexions, ton argot.</div>
+            <div class="bulle cache bulle-col2">Je sais déjà le faire, en grande partie.</div>
+            <div class="bulle cache bulle-col1">Oui, nous t’apprendrons simplement à le faire à la volée et selon ton
+            propre style. Sais-tu déjà l’école que tu vas choisir ?</div>
+            <div class="bulle cache bulle-col2">Je ne les connais pas toute. Mais j’ai mon idée.</div>
+            <div class="bulle cache bulle-col1">Il y a quatre grands styles chez les Hauts Parleurs. Le plus courant est le
+            style gratuit qui consiste...</div>
+            <div class="bulle cache bulle-col2">À n’utiliser que les mots du corpus gratuit - je sais ça.</div>
+            <div class="bulle cache bulle-col1">Le second est le style néologique qui s’appuie sur le vocabulaire archivé
+            ici, que nos érudits enrichissent sans cesse. Le troisième est à mon sens le
+            plus ambitieux, mais aussi le plus beau. Il s’agit du style torse. Beaucoup
+            d’artistes le confondent avec le néologique quoiqu’il soit très différent. Il
+            consiste à tordre le langage commercial, à plier et à découper les mots, à
+            préfixer et à suffixer, à verbaliser des noms, substantiver des verbes,
+            transformer des conjonctions en adjectif. Il consiste au fond à imprimer,
+            par des flexions, une force de résistance à l’intérieur du langage pour le
+            rendre inapte à toute récupération. Tu le sais, notre corpus 17 est menacé
+            de revente, mais les mots torses, eux, échappent aux pressions : trop dur
+            à réutiliser hors contexte, trop dépendant de la phrase où ils déploient
+            leurs effets.</div>
+            <div class="bulle cache bulle-col2">Pourquoi dis-tu que notre corpus est menacé ? Nous en sommes
+            propriétaires, non ?</div>
+            <div class="bulle cache bulle-col1">Justement. Nos paysans bio pensent qu’il faudrait revendre certains mots
+            qui se diffusent bien hors zone 17.</div>
+            <div class="bulle cache bulle-col2">À qui ?</div>
+            <div class="bulle cache bulle-col1">Aux multinationales, tiens. On a eu la semaine dernière une proposition
+            de Wor[l]d pour Volte, Volté et Volution. De quoi financer nos plantations
+            pendant deux ans. Nous avons refusé mais la tentation est là. Certains
+            parleurs de la Tour Rawls voient ça comme une revanche aussi. Leur
+            revendre des mots, ça les fait saliver comme de jeunes chiots.</div>
+            <div class="bulle cache bulle-col2">Il y a là-bas une confusion politique qui ne rassure pas. Qui utilise le
+            style torse chez nous ?</div>
+            <div class="bulle cache bulle-col1">Pour l’instant, je suis le seul...</div>
+            <div class="bulle cache bulle-col2">Je vois... Et le quatrième style ?</div>
+            <div class="bulle cache bulle-col1">C’est le style monomonème, avec ces deux variantes : maniaque et large.
+            C’est un style qui ne pardonne pas la médiocrité puisqu’il consiste à
+            n’utiliser qu’un seul mot par phrases, avec ses dérivés et à démultiplier
+            les effets de rythme et de scansion autour de ce seul mot.</div>
+            <div class="bulle cache bulle-col2">Je crois savoir quelle sera mon école.</div>
+            <div class="bulle cache bulle-col1">Je t’écoute.</div>
+            <div class="bulle cache bulle-col2">Ce sera le monomonème. Dans sa version maniaque.</div>
+        </div> 
         <script>
-            function toggleBulle(divs, i) {
-                console.log('toggleBulle');
-                (i%2 == 0) ?  divs[i].classList.add('bulle-position1') : divs[i].classList.add('bulle-position2');
-                
-                divs.forEach(div => {
-                    if(div.classList.contains('affiche')) {
-                        div.classList.replace('affiche', 'efface');
-                    }
-                    else {
-                        div.classList.replace('efface', 'cache');
-                    }
-                });
-                divs[i].classList.replace('cache', 'affiche');
+            function toggleBulle(divs, index, pIndex) {
+                divs[index].classList.replace('cache', 'affiche');
+                divs[index].classList.replace('efface', 'affiche');
+
+                if(index-3>=0 && divs[index-3].classList.contains('affiche')) {
+                    divs[index-3].classList.replace('affiche', 'efface');
+                }
+                if(index+4<divs.length && divs[index+4].classList.contains('affiche')) {
+                    divs[index+4].classList.replace('affiche', 'efface');
+                }
             }
 
             (function() {
@@ -157,7 +152,7 @@
 
                     index = Math.min(divs.length-1, Math.floor(totalScrolled/scrollSize));
                     if(index != pIndex) {
-                        toggleBulle(divs, index);
+                        toggleBulle(divs, index, pIndex);
                         pIndex = index;
                     }                    
                 }
