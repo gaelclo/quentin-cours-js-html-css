@@ -1,0 +1,61 @@
+<html>
+    <head>
+        <title>Transition example</title>
+
+        <style>
+            @keyframes fondu {
+                from {
+                    opacity: 0;
+                }
+                to {
+                    opacity: 1;
+                }
+            }
+            .affiche {
+                animation-duration: 1s;
+                animation-name: fondu;
+            }
+            .cache {
+                display: none;
+            }
+            .bulle {
+                border: 1px solid black;
+                border-radius: 50%;
+                padding: 2%;
+            }
+            #bulleA {
+                position: absolute;
+                top: 25%;
+                left: 25%;
+            }
+            #bulleB {
+                position: absolute;
+                top: 45%;
+                left: 35%;
+            }
+            #bulleC {
+                position: absolute;
+                top: 65%;
+                left: 15%;
+            }
+        </style>
+
+        <script>
+            function animeBulleAvecDelai(bulle, delay) {            
+                setTimeout(function(){
+                    document.getElementById(bulle).classList.remove('cache');
+                    document.getElementById(bulle).classList.add('affiche');
+                }, delay);
+            }
+
+            animeBulleAvecDelai('bulleA', 1000);
+            animeBulleAvecDelai('bulleB', 2000);
+            animeBulleAvecDelai('bulleC', 3000);
+        </script>
+    </head>
+    <body>
+        <div id="bulleA" class="cache bulle">Bulle A.</div>
+        <div id="bulleB" class="cache bulle">Bulle B.</div>
+        <div id="bulleC" class="cache bulle">Bulle C.</div>
+    </body>
+</html>
